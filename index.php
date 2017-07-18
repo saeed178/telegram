@@ -26,9 +26,4 @@ if ($chat_id !== '' && $message !== '') {
 
     $result = Request::sendMessage($data);
 
-    if ($result->isOk()) {
-        echo 'Message sent succesfully to: ' . $chat_id;
-    } else {
-        echo 'Sorry message not sent to: ' . $chat_id;
-    }
 }

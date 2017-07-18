@@ -15,8 +15,8 @@ $BOT_NAME = 'sirjanBot';
 $telegram = new Telegram($API_KEY, $BOT_NAME);
 
 // Get the chat id and message text from the CLI parameters.
-$chat_id = isset($argv[1]) ? $argv[1] : '';
-$message = isset($argv[2]) ? $argv[2] : '';
+$chat_id = "358589496";
+$message = "salam my dear";
 
 if ($chat_id !== '' && $message !== '') {
     $data = [

@@ -1,0 +1,16 @@
+{
+    "name": "myproject/myproject",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {
+		"silex/silex": "^2.0.4",
+		"monolog/monolog": "^1.22",
+		"twig/twig": "^2.0",
+		"symfony/twig-bridge": "^3",
+		"php": ">=5.6",
+		"longman/telegram-bot": "*"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }
+}

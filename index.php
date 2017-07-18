@@ -21,7 +21,7 @@ $message = "salam my dear";
 if ($chat_id !== '' && $message !== '') {
     $data = [
         'chat_id' => $chat_id,
-        'text'    => $message,
+        'text'    => $chat_id,
     ];
 
     $result = Request::sendMessage($data);

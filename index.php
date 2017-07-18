@@ -22,7 +22,7 @@ $command = $update['message']['text'];
 //$message = "Welcome to Sirjan";
 
  if($command == '/start'){
-    $message="سلام، دوست من <br> saeed7htc@gmail.com";
+    $message="سلام، دوست من  saeed7htc@gmail.com";
  }else{
     $message= "دستور شما نا معتبر است";
  }

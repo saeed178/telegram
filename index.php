@@ -28,7 +28,7 @@ $command = $update['message']['text'];
     $message= "دستور شما نا معتبر است";
  }
 */
-$message = "I'm telegram bot! saeed7htc@gmail.com سلام";
+$message = "I'm telegram bot! Email: saeed7htc@gmail.com";
     $data = [
         'chat_id' => $chat_id,
         'text'    => $message,

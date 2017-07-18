@@ -17,8 +17,8 @@ $update = json_decode($response, true);
 $telegram = new Telegram($API_KEY, $BOT_NAME);
 
 // Get the chat id and message text from the CLI parameters.
-$chat_id = "358589496";
-$message = $update;
+$chat_id = $update['message']['from']['id'];
+$message = "Welcome to Sirjan";
 
 
 if ($chat_id !== '' && $message !== '') {

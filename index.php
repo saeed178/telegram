@@ -18,15 +18,18 @@ $telegram = new Telegram($API_KEY, $BOT_NAME);
 
 // Get the chat id and message text from the CLI parameters.
 $chat_id = $update['message']['from']['id'];
-$message = "Welcome to Sirjan";
+$command = $update['message']['text'];
+//$message = "Welcome to Sirjan";
 
+ if($command == '/start'){
+    $message= "سلام، به ربات ما خوش آمدید";
+ }else{
+    $message= "دستور شما نا معتبر است";
+ }
 
-if ($chat_id !== '' && $message !== '') {
     $data = [
         'chat_id' => $chat_id,
         'text'    => $message,
     ];
 
-    $result = Request::sendMessage($data);
-
-}
+     $result = Request::sendMessage($data); 

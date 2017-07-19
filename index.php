@@ -30,7 +30,7 @@ $message =$response;
     $message= "دستور شما نا معتبر است";
  }
 */
-$message = "I'm telegram bot! My Email: saeed7htc@gmail.com";
+//$message = "I'm telegram bot! My Email: saeed7htc@gmail.com";
     $data = [
         'chat_id' => $chat_id,
         'text'    => $message,

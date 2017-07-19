@@ -12,17 +12,17 @@ $API_KEY = '447205620:AAGfcb3s9IXBeY28b3h0cP1zpxjXWh7Wavw';
 $BOT_NAME = 'sirjanBot';
 
 $telegram = new Telegram($API_KEY, $BOT_NAME);
-
-$response = file_get_contents('php://input');
-$update =json_decode($response, true);
+$telegram->handle();
+//$response = file_get_contents('php://input');
+//$update =json_decode($response, true);
 
 
 // Get the chat id and message text from the CLI parameters.
 //$chat_id = $update['message']['from']['id'];
 $chat_id = "358589496";
-$command = $update['message']['text'];
+//$command = $update['message']['text'];
 //$message = "Welcome to Sirjan";
-$message =$response;
+$message =$telegram->$update-> getMessage() ;
 /*
  if($command == '/start'){
     $message="Hi my dear, saeed7htc@gmail.com";

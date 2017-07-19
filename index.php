@@ -11,10 +11,11 @@ use Longman\TelegramBot\Telegram;
 $API_KEY = '447205620:AAGfcb3s9IXBeY28b3h0cP1zpxjXWh7Wavw';
 $BOT_NAME = 'sirjanBot';
 
-$response = file_get_contents('php://input');
-$update = json_decode($response, true);
-
 $telegram = new Telegram($API_KEY, $BOT_NAME);
+
+$response = $telegram->handle();// file_get_contents('php://input');
+$update =json_decode($response, true);
+
 
 // Get the chat id and message text from the CLI parameters.
 $chat_id = $update['message']['from']['id'];

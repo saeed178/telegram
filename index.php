@@ -22,7 +22,7 @@ $telegram->handle();
 $chat_id = "358589496";
 //$command = $update['message']['text'];
 //$message = "Welcome to Sirjan";
-$message =$telegram->$update-> getMessage() ;
+$message =$telegram->$update->getMessage();
 /*
  if($command == '/start'){
     $message="Hi my dear, saeed7htc@gmail.com";

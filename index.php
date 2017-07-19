@@ -17,11 +17,11 @@ $update = json_decode($response, true);
 $telegram = new Telegram($API_KEY, $BOT_NAME);
 
 // Get the chat id and message text from the CLI parameters.
-//chat_id = $update['message']['from']['id'];
-$chat_id = "358589496";
+$chat_id = $update['message']['from']['id'];
+//$chat_id = "358589496";
 $command = $update['message']['text'];
 //$message = "Welcome to Sirjan";
-$message =$response;
+//$message =$response;
 /*
  if($command == '/start'){
     $message="Hi my dear, saeed7htc@gmail.com";
@@ -29,7 +29,7 @@ $message =$response;
     $message= "دستور شما نا معتبر است";
  }
 */
-//$message = "I'm telegram bot! My Email: saeed7htc@gmail.com";
+$message = "I'm telegram bot! My Email: saeed7htc@gmail.com";
     $data = [
         'chat_id' => $chat_id,
         'text'    => $message,

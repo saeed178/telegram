@@ -12,7 +12,7 @@ $API_KEY = '447205620:AAGfcb3s9IXBeY28b3h0cP1zpxjXWh7Wavw';
 $BOT_NAME = 'sirjanBot';
 
 $telegram = new Telegram($API_KEY, $BOT_NAME);
-//$telegram->handle();
+$telegram->handle();
 //$message = $telegram->getCustomUpdate()->getMessage();
 //$response = file_get_contents('php://input');
 //$update =json_decode(Request::getInput() , true);
@@ -23,7 +23,7 @@ $telegram = new Telegram($API_KEY, $BOT_NAME);
 $chat_id = "358589496";
 //$message = $update['message']['text'];
 //$message = "Welcome to Sirjan";
-//$message =$telegram->$update->getMessage();
+$message =$telegram->getCustomUpdate->getMessage();
 /*
  if($command == '/start'){
     $message="Hi my dear, saeed7htc@gmail.com";
@@ -31,7 +31,7 @@ $chat_id = "358589496";
     $message= "دستور شما نا معتبر است";
  }
 */
-$message = "I'm telegram bot! My Email: saeed7htc@gmail.com";
+//$message = "I'm telegram bot! My Email: saeed7htc@gmail.com";
     $data = [
         'chat_id' => $chat_id,
         'text'    => $message,
